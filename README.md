@@ -1,3 +1,5 @@
+add tpm plugin
+
 .tmux.conf
 ==========
 

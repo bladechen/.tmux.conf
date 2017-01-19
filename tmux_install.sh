@@ -7,6 +7,7 @@
 # exit on error
 set -e
 
+
 TMUX_VERSION=2.3
 
 # create our directories
@@ -33,6 +34,8 @@ cd ..
 ############
 # ncurses  #
 ############
+
+export CPPFLAGS="-P"
 tar xvzf ncurses-5.9.tar.gz
 cd ncurses-5.9
 ./configure --prefix=$HOME/local
@@ -54,3 +57,5 @@ cd ..
 rm -rf $HOME/tmux_tmp
 
 echo "$HOME/local/bin/tmux is now available. You can optionally add $HOME/local/bin to your PATH."
+
+
